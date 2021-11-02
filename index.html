@@ -1,0 +1,141 @@
+  
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Wiktoria Bobrowska">
+    <meta name="description" content="Shi De!">
+    <meta name="keywords" content="nauka, język chiński, Chiny, Azja">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title> SHI DE! </title>
+  </head>
+
+  <body> 
+    <div id = "logo">
+      <img src="folder/ostatecznelogo.png" alt="Logo Shi De">
+    </div>
+
+    <div id = "header">
+    <h1> SHI DE</h1>
+    <h2> Powiedz tak językowi chińskiemu już dziś!</h2> 
+  </div>
+  
+  <div id = "icons">
+    <img src="https://www.freeiconspng.com/uploads/hd-youtube-logo-png-transparent-background-20.png"
+     alt="Youtube logo"
+    class="social">
+    <img src="https://www.freeiconspng.com/uploads/vector-logos-high-resolution-logos-logo-designs-facebook-icon-vector-6.png"
+    alt="Facebook logo"
+    class="social" style="width: 15%; padding-top: 2%;">
+  </div>
+
+    <div class="topnav">
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Kontakt</a>
+      <a href="#lektorzy">Lektorzy</a>
+      <a href="#uslugi">Usługi Dodatkowe</a>
+      <a href="#courses1">Kursy</a>
+      <a class="active" href="#home">Home</a>
+    </div>
+
+    <div id = "leftside">  
+      <img src="folder/pic2.png">
+    </div>
+    
+    <div id = "rightside">
+      <h1 id="question">Dlaczego my?</h1>
+      <table>
+      <tr>
+      <td class="pics">
+      <img src="folder/book.png" id="book"></td>
+      <td  class="text"><p>Własne środki dydaktyczne i metodologia! <br> Mamy wszystkie niezbędne materiały w ramach współpracy z wydawnictwem Edgard.</p></td>
+     </tr>
+     <tr>
+      <td class="pics">
+      <img src="folder/teacher1.png"></td>
+      <td  class="text"><p>Doświadczone grono pedagogiczne, mówiące biegle po chińsku i angielsku.</p></td></tr>
+     <tr>
+      <td class="pics">
+      <img src="folder/98.png"></td>
+      <td class="text"><p>zdawalności HSK.</p></td></tr>
+     <tr>
+      <td class="pics">
+      <img src="folder/plane.png"></td>
+      <td class="text"><p>Grupowe wizyty w Chinach w ramach kursu.</p></td></tr>
+    </table>
+    </div>
+
+    <div class="bar" id="courses1"><h2>Kursy</h2></div>
+    <div id = "courses">
+    <div class="cours">
+      <h3>Letni obóz</h3>
+      <p> Wakacje to wspaniały czas na naukę poprzez odkrywanie świata i zawieranie przyjaźni. Najefektywniejszą metodą doskonalenia swoich umiejętności językowych jest wykorzystywanie ich w praktyce, zatem zapraszamy na wspólny miesiąc poznawania tajemnic Chin, a przy okazji nauki języka chińskiego. Na przedmieściach Hongkongu będziesz mógł rozmawiać z rodowitymi Chińczykami, co podniesie poziom Twoich dotychczasowych umiejętności. Wszystko pod czujnym okiem naszych lektorów. </p>
+      <input class="button1" type="button" value="Dowiedz się więcej!">
+    </div>
+    <div class="parallax" id="summer"></div>
+    <div class="cours">
+      <h3>Business camp </h3>
+      <p> Wiążesz przyszłość swojego przedsiębiorstwa z prowadzeniem interesów za granicą? Chiny, które w ostatnim czasie stały się światową potęgą zarówno gospodarczą jak i technologiczną, są idealnym kandydatem na partnera biznesowego! Naucz siebie lub swoich pracowników prowadzenia biznesu, spisywania umów i wystawiania faktur po chińsku już dziś! </p>
+      <input class="button1" type="button" value="Dowiedz się więcej!">
+    </div>
+    <div class="parallax" id="business"></div>
+    <div class="cours">
+      <h3>Zajęcia grupowe przez rok</h3>
+      <p> Chcesz zacząć posługiwać się językiem chińskim na codzień? Poznawanie klultury Chin to Twoje hobby? Zapraszamy na całoroczne zajęcia, które są prowadzone dwa razy w tygodniu przez naszych doświadczonych lektorów. W małej grupie nauczysz się więcej, a terminy zajęć dopasujemy do Twojego czasu. Wystawiamy certyfikaty językowe jako poświadczenie Twoich umiejętności i w pełni przygotujemy do egzaminu HSK. </p>
+      <input class="button1" type="button" value="Dowiedz się więcej!">
+    </div>
+
+    <div class="parallax" id="year"></div>
+
+    <div class="bar"><h2>Kontakt</h2></div>
+
+    <form  action="plik.php" method="POST" id= "contact">
+    <div id="form">
+      <div class="higherform" id="space">
+        <label for="name"> Imię: </label>
+            <input class = "fields" type="text" id="name" name="name" required> </br>
+        <label for="email"> E-mail: </label>
+            <input class = "fields" type="email" id="email" name="email" required> </br>
+      </div>
+      <div class="higherform">
+        <label for="surname"> Nazwisko: </label>
+            <input class = "fields" type="text" id="surname" name="name" required> </br>
+        <label for="select"> Kurs: </label>
+          <select  class = "fields" id="select" name="country">
+            <option hidden disabled selected value="empty"></option>
+            <option value="Kurs letni">Kurs letni</option>
+            <option value="Kurs biznesowy">Kurs biznesowy</option>
+            <option value="Kurs roczny">Kurs roczny</option>
+            <option value="Nie dotyczy">Nie dotyczy</option>
+          </select> </br>
+      </div>
+     </div>
+     <label id="ltextarea" for="textarea"> Zadaj nam pytanie </label></br>
+       <textarea id="subject" name="textarea"></textarea>
+      <div id="lowerform">
+      <div id="covid">
+        <p> Ze względu na duże zainteresowanie naszymi kursami w całej Polsce oraz z powodu pandemii COVID-19, w trosce o bezpieczeństwo, część z oferowanych przez nas kursów będzie prowadzona zdalnie. Kursy wciąż odbywają się w trybie stacjonarnym, zgodnie z wytycznymi dot. ochrony przed COVID-19.</p>
+      </div>
+
+     <div id = "check">
+     <input type="radio" checked="checked" name="radio">
+          <label for="radio"> Kurs online </label> </br>
+      <input type="radio" checked="checked" name="radio"/>
+          <label for="radio"> Kurs stacjonarny </label> </br>
+      <input type="radio" checked="checked" name="radio">
+          <label for="radio"> Jestem zainteresowany/a inną usługą </label> </br>
+    </div>
+  </div>
+    <div id="submit">
+    <input id = "button2" type="submit" onclick="alert('Gratulujemy dobrej decyzji!')" value="Zapisz się!" style = "font-size:20px">
+    </div>
+    </form>
+    <footer>
+      <div id="cut"></div>
+      <p class="tfooter">Adres: Bydgoszcz, ul. Wiązów</p>
+      <p class="tfooter">Tel. 666 666 666</p>
+      <p class="tfooter">Mail: shide@kpch.com</p>
+    </footer>
+  </body> 
+</html
